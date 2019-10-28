@@ -16,14 +16,19 @@
         <option value="2">Challenge 02</option>
         <option value="3">Challenge 03</option>
         <option value="4">Challenge 04</option>
-        <option value="5">Challenge 05</option>
     </select>
 
-    <input type="button" value="desafiar" id="btn_desafiar">
+    <input type="button" value="Desafiar" id="btn_desafiar">
 
     <div id="div_btn"></div>
     <div id="div_quadrado"></div>
-    
+
+    <div id="esconder_input_btn">
+        <input type="text" name="nome" id="input_add" placeholder="Digite um item a lista" style="margin-top: 20px">
+        <button onclick="adicionar()" id="btn_add" style="margin-top: 20px">Adicionar</button>
+    </div>
+
+    <ul id="lista_nomes"></ul>
 
 
     <script src="challenge.js"></script>
