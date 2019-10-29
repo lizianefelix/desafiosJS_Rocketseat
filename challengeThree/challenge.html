@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Challenge Three</title>
+</head>
+
+<body>
+    <h2>Selecione o desafio: </h2>
+    <select id="numero_desafio">
+        <option value="0">Qual será o desafio?</option>
+        <option value="1">Challenge 01</option>
+        <option value="2">Challenge 02</option>
+    </select>
+
+    <input type="button" value="Desafiar" id="btn_desafiar">
+
+    <div id="container_idade">
+        <input type="text" id="input_idade">
+        <input type="button" value="Enviar" id="btn_idade">
+        <p id="conteudo_idade"></p>
+    </div>
+    <div id="container_user">
+        <input type="text" id="input_user">
+        <input type="button" value="Enviar" id="btn_user">
+        <h4></h4>
+        <ul id="conteudo_user"></ul>
+        <p id="error_user"></p>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="challenge.js"></script>
+</body>
+
+</html>
