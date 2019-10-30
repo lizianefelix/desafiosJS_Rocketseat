@@ -66,6 +66,7 @@ function desafioIdade() {
     }
 }
 
+//desafio 02/
 function desafioUser() {
     const btnUser = document.getElementById('btn_user');
     const conteudoUser = document.getElementById('conteudo_user');
