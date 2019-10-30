@@ -1,5 +1,6 @@
 const btnDesafiar = document.getElementById('btn_desafiar');
 const valueSelect = document.getElementById('numero_desafio');
+const loading = document.getElementById('loading');
 
 //esconder desafio 01
 const container_idade = document.getElementById('container_idade');
@@ -23,6 +24,9 @@ btnDesafiar.onclick = function () {
         container_idade.style.display = 'block';
 
         btnIdade.onclick = function () {
+            conteudoIdade.innerText = "";
+            loading.classList.remove('hidden');
+            
             const idadeValue = document.getElementById('input_idade');
             let idade = idadeValue.value;
 
@@ -34,6 +38,9 @@ btnDesafiar.onclick = function () {
                 .catch(function () {
                     conteudoIdade.innerText = `${idade} é menor que 18`;
                     idadeValue.value = "";
+                })
+                .then(function() {
+                    loading.classList.add('hidden');
                 });
         }
     }
@@ -45,6 +52,8 @@ btnDesafiar.onclick = function () {
         container_user.style.display = 'block';
 
         btnUser.onclick = function () {
+            loading.classList.remove('hidden');
+
             const userValue = document.getElementById('input_user');
             let user = userValue.value;
 
@@ -65,15 +74,16 @@ btnDesafiar.onclick = function () {
                 })
                 .catch(function (error) {
                     if(error.response.status === 404) {
+                        userName.innerText = "";
                         errorUser.style.color = '#cc0000'
-                        errorUser.innerText = `Usuário '${user}' não existe.`;
+                        errorUser.innerText = `Usuário '${user}' não existe.`; 
                         userValue.value = "";
                     }
+                })
+                .then(function() {
+                    loading.classList.add('hidden');
                 });
         }
-    }
-    else if (valueSelect.value == 3) {
-        console.log(valueSelect.value);
     }
 }
 
@@ -88,41 +98,3 @@ function checaIdade(idade) {
         }
     });
 }
-
-
-// axios.get('https://api.github.com/users/lizianefelix')
-//     .then(function (response) {
-//         console.log(response.data.avatar_url);
-//     })
-//     .catch(function (error) {
-//         console.log(error);
-//     });
-
-// var minhaPromise = function() {
-//     return new Promise(function(resolve, reject) {
-
-//         var xhr = new XMLHttpRequest();
-
-//         xhr.open('GET', 'https://api.github.com/users/lizianefelix');
-//         xhr.send(null);
-
-//         xhr.onreadystatechange = function() {
-//             if(xhr.readyState === 4) {
-//                 if(xhr.status === 200) {
-//                     resolve(JSON.parse(xhr.responseText));
-//                 }
-//                 else{
-//                     reject('Erro na requisição');
-//                 }
-//             }
-//         }
-//     });
-// }
-
-// minhaPromise()
-//     .then(function(response) {
-//         console.log(response);
-//     })
-//     .catch(function(error) {
-//         console.log(error);
-//     })

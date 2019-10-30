@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Challenge Three</title>
+
+
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,19 +24,22 @@
     </select>
 
     <input type="button" value="Desafiar" id="btn_desafiar">
+    <hr />
 
     <div id="container_idade">
-        <input type="text" id="input_idade">
+        <input type="text" id="input_idade" placeholder="Digite uma idade">
         <input type="button" value="Enviar" id="btn_idade">
         <p id="conteudo_idade"></p>
     </div>
     <div id="container_user">
-        <input type="text" id="input_user">
+        <input type="text" id="input_user" placeholder="Digite um usuário do github">
         <input type="button" value="Enviar" id="btn_user">
         <h4></h4>
         <ul id="conteudo_user"></ul>
         <p id="error_user"></p>
     </div>
+
+    <div id="loading" class="hidden">Carregando...</div>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="challenge.js"></script>
