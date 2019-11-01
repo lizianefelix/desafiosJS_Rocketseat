@@ -1,5 +1,5 @@
 <p align="center">
-<img src="http://pluspng.com/img-png/logo-javascript-png-other-resolutions-240-240-pixels-240.png" width="400" alt="Javascript">
+<img src="http://pluspng.com/img-png/logo-javascript-png-other-resolutions-240-240-pixels-240.png" width="150" alt="Javascript">
 </p>
 <h1 align="center">Desafios JS</h1>
 
@@ -99,10 +99,11 @@ var newColor = getRandomColor(); // #E943F0
 ```js
 var nomes = ["Diego", "Gabriel", "Lucas"];
 ```
-Preencha uma lista (<ul>) no HTML com os itens da seguinte forma:
+Preencha uma lista `<ul>` no HTML com os itens da seguinte forma:
 - Diego
 - Gabriel
 - Lucas
+
 
 `4.` Seguindo o resultado do exercício anterior adicione um input em tela e um botão como a seguir:
 ```js
