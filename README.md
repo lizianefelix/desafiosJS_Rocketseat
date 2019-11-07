@@ -7,7 +7,7 @@
 
 Resoluções dos desafios propostos pela rocketseat no módulo Starter - Javascript.
 
-### Challenge One:
+### [Challenge One](https://github.com/lizianefelix/desafiosJS_Rocketseat/tree/master/challengeOne):
 
 `1.` Criar uma função que dado o objeto a seguir:
 ```js
@@ -75,7 +75,7 @@ O Diego possui as habilidades: Javascript, ReactJS, Redux
 O Gabriel possui as habilidades: VueJS, Ruby on Rails, Elixir
 ```
 
-### Challenge Two:
+### [Challenge Two](https://github.com/lizianefelix/desafiosJS_Rocketseat/tree/master/challengeTwo):
 
 `1.` Crie um botão que ao ser clicado cria um novo elemento em tela com a forma de um quadrado
 vermelho com 100px de altura e largura. Sempre que o botão for clicado um novo quadrado deve
@@ -114,7 +114,7 @@ Ao clicar no botão, a função `adicionar()` deve ser disparada adicionando um 
 nomes baseado no nome preenchido no input e renderizando o novo item em tela juntos aos
 demais itens anteriores. Além disso, o conteúdo do input deve ser apagado após o clique.
 
-### Challenge Three:
+### [Challenge Three](https://github.com/lizianefelix/desafiosJS_Rocketseat/tree/master/challengeThree):
 
 `1.` Crie uma função que recebe a idade de um usuário e retorna uma Promise que depois de 2
 segundos retornará se usuário é maior ou não que 18 anos. Se o usuário ter mais que 18 anos de
